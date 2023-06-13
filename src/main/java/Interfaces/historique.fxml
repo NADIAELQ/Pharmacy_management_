@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="1244.0" prefHeight="647.0" prefWidth="777.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HistoriqueController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="30.0" prefHeight="77.0" prefWidth="462.0">
+         <children>
+            <Label layoutX="8.0" layoutY="30.0" prefHeight="50.0" prefWidth="439.0" underline="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="18.0" styleClass="background" text="Historique">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_historique" layoutX="159.0" layoutY="17.0" prefHeight="26.0" prefWidth="245.0" promptText="numero commande" styleClass="tf" stylesheets="@../application/Application.css" text="Identifiant" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="cin_qt" layoutX="81.0" layoutY="110.0" onMouseClicked="#tableEvent" prefHeight="494.0" prefWidth="635.0" styleClass="tf" stylesheets="@../application/Application.css" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="81.0">
+        <columns>
+          <TableColumn fx:id="cin_number" prefWidth="172.0" text="Numero de commande" />
+          <TableColumn prefWidth="195.0" text="Quantité" />
+            <TableColumn fx:id="cin_date" prefWidth="226.0" styleClass="Date cmd" text="Date de commande" />
+        </columns>
+      </TableView>
+   </children>
+   <opaqueInsets>
+      <Insets left="10.0" right="10.0" />
+   </opaqueInsets>
+   <padding>
+      <Insets left="10.0" right="10.0" />
+   </padding>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="720.0" prefHeight="629.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane layoutX="10.0" layoutY="30.0" prefHeight="541.0" prefWidth="459.0">
+            <children>
+                <Label blendMode="BLUE" layoutX="26.0" layoutY="47.0" prefHeight="331.0" prefWidth="653.0" textOverrun="WORD_ELLIPSIS" underline="true">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Label>
+                <Label layoutX="23.0" prefHeight="36.0" prefWidth="184.0" styleClass="background" text="Commander">
+                    <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="32.0" />
+                    </font>
+                </Label>
+                <TextField blendMode="SRC_ATOP" layoutX="26.0" layoutY="63.0" prefHeight="26.0" prefWidth="245.0" promptText="numero commande" styleClass="tf" stylesheets="@../application/Application.css" />
+
+                <TextField blendMode="SRC_ATOP" layoutX="28.0" layoutY="108.0" prefHeight="26.0" prefWidth="480.0" promptText="Prix de la commande" styleClass="tf" stylesheets="@../application/Application.css" />
+                <TextField blendMode="SRC_ATOP" layoutX="28.0" layoutY="165.0" prefHeight="26.0" prefWidth="480.0" promptText="état de la commande" styleClass="tf" stylesheets="@../application/Application.css" />
+                <TextField blendMode="SRC_ATOP" layoutX="26.0" layoutY="220.0" prefHeight="26.0" prefWidth="480.0" promptText="Date de la commande " styleClass="tf" stylesheets="@../application/Application.css" />
+                <ComboBox blendMode="SRC_ATOP" layoutX="26.0" layoutY="276.0" prefWidth="150.0" promptText="jour" style="-fx-background-color: #B0E0E6;" />
+                <ComboBox blendMode="SRC_ATOP" layoutX="357.0" layoutY="276.0" prefWidth="150.0" promptText="Année" style="-fx-background-color: #B0E0E6;" />
+                <ComboBox blendMode="SRC_ATOP" layoutX="191.0" layoutY="276.0" prefWidth="150.0" promptText="Mois" style="-fx-background-color: #B0E0E6;" />
+                <TableView fx:id="tableCmd" layoutX="23.0" layoutY="327.0" prefHeight="200.0" prefWidth="578.0" style="-fx-background-color: #B0E0E6;" styleClass="tf" stylesheets="@../application/Application.css" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="109.0">
+                    <columns>
+                        <TableColumn fx:id="colNumber" prefWidth="156.0" text="Numero cmd" />
+                        <TableColumn fx:id="colPrix" prefWidth="147.0" text="prix cmd" />
+                        <TableColumn fx:id="colEtat" prefWidth="164.0" text="état cmd" />
+                        <TableColumn fx:id="colDate" prefWidth="170.0" styleClass="Date cmd" text="Date cmd" />
+                    </columns>
+                </TableView>
+            <TextField fx:id="searchProduct" alignment="TOP_CENTER" blendMode="EXCLUSION" cache="true" cacheHint="QUALITY" layoutX="272.0" layoutY="103.0" prefHeight="31.0" prefWidth="235.0" promptText="Entrer le prix de la commande" />
+            <TextField fx:id="searchProduct2" alignment="TOP_CENTER" blendMode="EXCLUSION" cache="true" cacheHint="QUALITY" layoutX="272.0" layoutY="58.0" prefHeight="31.0" prefWidth="235.0" promptText="Entrer le numero de la commande">
+               <effect>
+                  <Blend mode="RED" />
+               </effect></TextField>
+            <MenuButton alignment="TOP_CENTER" blendMode="SRC_ATOP" cache="true" cacheHint="QUALITY" layoutX="271.0" layoutY="160.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="235.0" text="état" textFill="#204d80" textOverrun="CENTER_WORD_ELLIPSIS">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+
+                  </Lighting>
+               </effect>
+            </MenuButton>
+            </children>
+        </AnchorPane>
+        <Button layoutX="33.0" layoutY="583.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: black;" styleClass="buttons" stylesheets="@../application/Application.css" text="Ajouter commende " textFill="#eeebeb" />
+        <Button layoutX="226.0" layoutY="583.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="159.0" style="-fx-background-color: black;" styleClass="buttons" stylesheets="@../application/Application.css" text="annuler commande " textFill="#fffdfd" />
+        <Button layoutX="415.0" layoutY="582.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="159.0" style="-fx-background-color: black;" styleClass="buttons" stylesheets="@../application/Application.css" text="modifier commande " textFill="#f5f5f5" />
+    </children>
+</AnchorPane>

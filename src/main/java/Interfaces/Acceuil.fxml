@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AcceuilController">
+    <children>
+        <AnchorPane layoutX="14.0" layoutY="50.0" prefHeight="619.0" prefWidth="252.0" style="-fx-background-color: #373737;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="801.0" AnchorPane.topAnchor="25.0">
+            <children>
+                <Pane layoutY="-15.0" prefHeight="94.0" prefWidth="227.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0">
+                    <children>
+                        <Label layoutX="36.0" layoutY="23.0" text="PHARMACIE ALFADILIA" textFill="#eedada" />
+                    </children>
+                </Pane>
+                <Button fx:id="accueilButton" layoutX="-2.0" layoutY="82.0" mnemonicParsing="false" onMouseClicked="#acceuil" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #373737;" text="Accueil" textFill="WHITE" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="82.0" />
+                <Button fx:id="produitButton" contentDisplay="CENTER" layoutY="118.0" mnemonicParsing="false" onMouseClicked="#produit" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #373737;" text="Produit" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="6.0" />
+                <Button fx:id="commandeButton" contentDisplay="CENTER" layoutX="-4.0" layoutY="152.0" mnemonicParsing="false" onMouseClicked="#commande" prefHeight="35.0" prefWidth="225.0" style="-fx-background-color: #373737;" text="Commande" textFill="WHITE" />
+                <Button fx:id="fournisseurButton" layoutX="1.0" layoutY="188.0" mnemonicParsing="false" onMouseClicked="#fournisseur" prefHeight="41.0" prefWidth="221.0" style="-fx-background-color: #373737;" text="Fournisseur" textFill="WHITE" />
+                <Button fx:id="pharmacienButton" layoutY="232.0" mnemonicParsing="false" onMouseClicked="#pharmacien" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #373737;" text="Pharmacien" textFill="WHITE" />
+                <Button fx:id="facteursButton" layoutX="-2.0" layoutY="267.0" mnemonicParsing="false" onMouseClicked="#facture" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #373737;" text="Les facteurs" textFill="WHITE" />
+                <Button fx:id="historiqueButton" layoutX="1.0" layoutY="303.0" mnemonicParsing="false" onMouseClicked="#historique" prefHeight="41.0" prefWidth="221.0" style="-fx-background-color: #373737;" text="Historique" textFill="WHITE" />
+                <Separator layoutX="2.0" layoutY="80.0" prefHeight="4.0" prefWidth="225.0" />
+            </children>
+        </AnchorPane>
+        <VBox layoutX="222.0" layoutY="25.0" prefHeight="594.0" prefWidth="774.0" style="-fx-background-color: #AAFFDD;" styleClass="white-pane" stylesheets="@../application/Application.css" />
+    </children>
+    <padding>
+        <Insets right="25.0" top="25.0" />
+    </padding>
+</AnchorPane>

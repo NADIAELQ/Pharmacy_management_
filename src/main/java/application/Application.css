@@ -1,0 +1,24 @@
+.white-pane{
+	-fx-background-image:url("/images/pharma.PNG") ;
+	-fx-background-size: 774 594 ;
+	-fx-background-position:center center;
+	-fx-background-color:#FFFFFF;
+}
+.white-pane1{
+	-fx-background-image:url("/images/gps.jpg") ;
+	-fx-background-size: 621 515;
+	-fx-background-position:center center;
+	-fx-background-color:#FFFFFF;
+}
+.white-pane2{
+	-fx-background-image:url("/images/photo.jpg") ;
+	-fx-background-size: 310 315 ;
+	-fx-background-position:center center;
+	-fx-background-color:#FFFFFF;
+}
+.pink-bnt{
+	-fx-background-color:#FFFFFF ;
+	-fx-border-radius:5px;
+	-fx-text-fill:#C5304D;
+	
+}

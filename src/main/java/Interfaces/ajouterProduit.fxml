@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="646.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterproduitController">
+    <children>
+        <VBox layoutX="50" layoutY="50" spacing="10">
+           <children>
+               <HBox spacing="10" />
+           </children>
+        </VBox>
+          <TextField fx:id="orderNumberField" layoutX="247.0" layoutY="200.0" prefHeight="31.0" prefWidth="239.0" />
+         <Button layoutX="24.0" layoutY="200.0" onAction="#addProduct" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: #d98551;" text="Libelle du produit :" />
+      <Line endX="100.0" layoutX="247.0" layoutY="142.0" startX="-100.0" />
+      <Button layoutX="24.0" layoutY="412.0" onAction="#addProduct" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: #d98551;" text="Prix d'achat :" />
+      <Button layoutX="24.0" layoutY="337.0" onAction="#addProduct" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: #d98551;" text="Prix de vente :" />
+      <Button layoutX="24.0" layoutY="269.0" onAction="#addProduct" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: #d98551;" text="Quantite du produit :" />
+      <Button layoutX="312.0" layoutY="507.0" onAction="#addProduct" prefHeight="31.0" prefWidth="174.0" text="Ajouter" />
+      <TextField fx:id="orderNumberField2" layoutX="247.0" layoutY="412.0" prefHeight="31.0" prefWidth="239.0" />
+      <TextField fx:id="orderNumberField3" layoutX="247.0" layoutY="337.0" prefHeight="31.0" prefWidth="239.0" />
+      <TextField fx:id="orderNumberField4" layoutX="247.0" layoutY="269.0" prefHeight="31.0" prefWidth="239.0" />
+         <Label fx:id="statusLabel" layoutX="17.0" layoutY="14.0" prefHeight="56.0" prefWidth="542.0" style="-fx-background-color: b0e0e6;" text="                                           Ajouter le produit  :" textOverrun="CENTER_ELLIPSIS" />
+      <TextField fx:id="text" layoutX="23.0" layoutY="494.0" prefHeight="56.0" prefWidth="260.0" />
+      <Text layoutX="114.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez saisir les donnees correspondantes :" wrappingWidth="395.64453125" />
+    </children>
+</AnchorPane>

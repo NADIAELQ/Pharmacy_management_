@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #AABBFF;" AnchorPane.bottomAnchor="573.6666666666666" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#quitter" text="QUITTER" />
+                  <MenuItem fx:id="monBouton" mnemonicParsing="false" onAction="#lancerAccueill" text="Afficher menu" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Windows">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#lancerwin1" text="Win1" />
+                  <MenuItem mnemonicParsing="false" onAction="#lancerwin2" text="Win2" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#informationAlert" text="alert" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="rootPane" layoutX="-1.0" layoutY="27.0" prefHeight="518.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox layoutY="2.0" prefHeight="515.0" prefWidth="621.0" styleClass="white-pane1" stylesheets="@../application/Application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-21.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="white-pane2" stylesheets="@../application/Application.css">
+                     <VBox.margin>
+                        <Insets right="315.0" top="310.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children></VBox>
+         </children>
+         <padding>
+            <Insets right="20.0" top="20.0" />
+         </padding></AnchorPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="30.0" prefHeight="49.0" prefWidth="593.0" styleClass="pink-bnt" stylesheets="@../application/Application.css" text=" Pharmacie Cité Universitaire Tilila">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
